@@ -1,1 +1,24 @@
-
+x=int(input("Enter first number: "))
+y=int(input("Enter second number: "))
+z=int(input("Enter third number: "))
+print("Average of numbers:",(x+y+z)/3)
+gi=int(input("Enter gross income rounded off to nearest penny: "))
+if(gi<10000):
+	print("Payable tax: 0 ")
+else:
+	dep=int(input("Enter number of dependents: "))
+	if(gi-10000-(dep*3000)<0):
+		print("Payable tax: 0")
+	else:
+		print("Payable tax: ",0.2*(gi-10000-(dep*3000)))
+sec=int(input("Enter number of seconds: "))
+print("Given time:",sec//60,"minutes",sec%60,"seconds")
+a=25
+b='25'
+c=25.0
+print(str(a+int(b)+int(c)))
+import math
+i=0
+while i<=345:
+	print(i,"---",round(math.sin(math.radians(i)),4),round(math.cos(math.radians(i)),4))
+	i=i+15
